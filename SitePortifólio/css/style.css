@@ -1,0 +1,208 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Lato", sans-serif;
+}
+
+.container {
+    max-width: 1110px;
+    width: 100%;
+    padding: 10px 2%;
+    margin: 0 auto;
+}
+
+.clear {
+    clear: both;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+header .container {
+    border-bottom: 1px solid #9b9797;
+}
+header .nav-mobile{
+    display: none;
+
+}
+header .nav-mobile h3{
+    float: right;
+    font-size: 22px;
+    cursor: pointer;
+}
+header .nav-mobile ul{
+    display: none;
+
+}
+header .nav-mobile ul li a {
+    font-size: 18px;
+    text-decoration: none;
+    color: black;
+    transition: all 0.3s ease; 
+}
+.vizu{
+    margin-top: 20px;
+    list-style-type: none;
+    width: 100%;
+    display: block !important;
+    text-align: center; 
+    transition: ease-in;
+}
+header .nav-mobile ul li{
+    padding: 10px 0;
+}
+header .nav-mobile ul li a{
+    font-size: 18px;
+    text-decoration: none;
+    color: black;
+}
+header .nav-mobile ul li a:hover{
+    border-bottom: black 1px solid;
+}
+
+
+header .nav-desktop ul {
+    list-style-type: none;
+    margin: 0 200px;
+    position: relative;
+    bottom: -5px;
+    left: 75px;
+}
+
+header .nav-desktop ul li {
+    display: inline-block;
+    margin: 0 40px;
+}
+
+header .nav-desktop ul li>a {
+    text-decoration: none;
+    color: black;
+}
+
+header .social i {
+    font-size: 20px;
+    padding: 10px;
+    color: black;
+}
+
+section.projetos .container {
+    padding: 60px 0;
+}
+
+section.projetos h2 {
+    text-align: center;
+}
+
+section.projetos .line {
+    width: 100px;
+    height: 2px;
+    background-color: black;
+    text-align: center;
+    margin: 10px auto;
+}
+
+section.projetos .flex {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+section.projetos .space {
+    display: flex;
+    margin: 60px 0;
+    border: 3px solid white;
+}
+
+section.projetos .projetos-wraper {
+    width: 100%;
+}
+
+section.projetos .projetos-single img {
+    max-width: 800px;
+    width: 100%;
+    height: 400px;
+    margin-top: 30px;
+}
+section.projetos .projetos-single h2 a{
+    text-decoration: none;
+    font-size: 20px;
+    display: inline-block;
+    color: black;
+    border-bottom: 1px solid #ccc;
+    width: 50%;
+}
+section.projetos .projetos-single p{
+    margin-top: 20px;
+    font-size: 22px;
+}
+section.contato h2 {
+    text-align: center;
+}
+
+section.contato .line {
+    width: 100px;
+    height: 2px;
+    background-color: black;
+    text-align: center;
+    margin: 10px auto;
+}
+section.contato form{
+    padding: 80px 0;
+    text-align: center;
+    width: 100%;
+    background-color: rgba(230, 230, 230, 0.1);
+}
+section.contato input[type=text]{
+    width: 100%;
+    max-width: 500px;
+    margin: 15px 0;
+    height: 40px;
+    padding-left: 10px;
+}
+section.contato input[type=text]:focus{
+    outline: 0;
+}
+section.contato textarea{
+    width: 100%;
+    max-width: 500px;
+    height: 200px;
+    resize: none;
+    padding: 10px 10px;
+}
+section.contato input[type=submit]{
+    width: 180px;
+    height: 44px;
+    margin-top: 20px;
+    border-radius: 80px;
+    font-size:18px;
+    font-weight: normal;
+    background-color:rgb(230, 238, 238) ;
+}
+
+footer .info-single{
+    margin: 0 95px;
+}
+footer .info-single h2{font-weight: normal;font-size: 22px;}
+footer .info-single p{font-size: 16px;font-weight: normal;}
+
+@media screen and (max-width: 1090px){
+    footer .container{text-align: center;}
+    footer .info-single{width: 100%;margin: 0 auto;}
+    header .logo{width: 100%;text-align: center;}
+    header .social{display: none;}
+    header .nav-desktop ul{display: none;}
+    header .nav-mobile{display: block;}
+}
+@media screen and (max-width: 500px) {
+    section.contato textarea,section.contato input[type=text]{
+        max-width: 300px;
+    }
+}
