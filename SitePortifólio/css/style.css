@@ -167,7 +167,7 @@ section.contato input[type=text]{
     height: 40px;
     padding-left: 10px;
 }
-section.contato input[type=text]:focus{
+section.contato input[type=text],textarea:focus{
     outline: 0;
 }
 section.contato textarea{
