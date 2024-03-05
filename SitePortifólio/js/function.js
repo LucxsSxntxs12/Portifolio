@@ -3,10 +3,10 @@ const menu = document.querySelector(".nav-mobile h3");
 var buton = true;
 menu.addEventListener("click", () => {
   if (buton) {
-    menu.parentElement.childNodes[5].classList.add("vizu");
+    menu.parentElement.querySelector("ul").classList.add("vizu");
     buton = false;
   } else if (!buton) {
-    menu.parentElement.childNodes[5].classList.remove("vizu");
+    menu.parentElement.querySelector("ul").classList.remove("vizu");
     buton = true;
   }
 });
@@ -18,8 +18,9 @@ function navegar(indentificador, pagina) {
     let offsetTop = pagina.offsetTop - 80;
     window.scrollTo({
       top: offsetTop,
-      behavior: "smooth",
+      behavior: "smooth"
     });
+    
 
     if (buton == false) {
       menu.parentElement.childNodes[5].classList.remove("vizu");
